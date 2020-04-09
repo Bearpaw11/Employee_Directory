@@ -10,6 +10,9 @@ const EmpTable = (props) => {
     <tr>
       <td>{props.name}</td>
       <td>{props.city}</td>
+      <td>{props.state}</td>
+      <td>{props.email}</td>
+      <td>{props.phone}</td>
     </tr>
   
 
