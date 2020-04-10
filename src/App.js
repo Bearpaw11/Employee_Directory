@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import EmpTable from './components/table'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from 'react-bootstrap/Navbar'
 import Table from 'react-bootstrap/Table'
 import API from './utils/api'
 
@@ -105,29 +106,32 @@ console.log(order,sortHead)
 
     render() {
         return ( 
-
             <div>
-      <form className="form">
-          <input
+
+  <div className= "header">
+    <h1>👉Employee Directory👈</h1>
+  </div>
+  
+      <form>
+          <input className="form"
             value={this.state.firstName}
             name="firstName"
             onChange={this.handleInputChange}
             type="text"
             placeholder="Enter Name to search"
           />
-
        
         </form>
-
+        <br></br>
           <Table striped bordered hover variant="dark">
   <thead>
     <tr>
   
-      <th name="name" onClick={this.handleSort}>Name <span>{this.state["name"] === "A" ? "↓" : "↑"}</span></th>
-      <th name="city" onClick={this.handleSort}>City <span>{this.state["city"] === "A" ? "↓" : "↑"}</span></th>
-      <th>State</th>
-      <th>Email</th>
-      <th>Phone</th>
+      <th name="name" onClick={this.handleSort}>Name <span>{this.state["name"] === "A" ? "↑" : "↓"}</span></th>
+      <th name="city" onClick={this.handleSort}>City <span>{this.state["city"] === "A" ? "↑" : "↓"}</span></th>
+      <th>Location</th>
+      <th>Email 📨</th>
+      <th>Phone ☎️</th>
     </tr>
   </thead>
   <tbody>
