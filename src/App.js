@@ -102,24 +102,7 @@ console.log(order,sortHead)
   }
 
 
-//   handleFormSubmit = event => {
-//     // Preventing the default behavior of the form submit (which is to refresh the page)
-//     event.preventDefault();
-// // filter the results
-//     // Alert the user their first and last name, clear `this.state.firstName` and `this.state.lastName`, clearing the inputs
-//    // alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
-//     this.setState({
-//       firstName: "",
-//       lastName: ""
-//     });
-//   };
 
-  // call form insede the render 
-  // get the info from the input ( handleonchange  / handelonsubmit)
-  // filter
-
-  // sort  this means you need to create an oncick in one of the header columns and
-  // handle sort 
     render() {
         return ( 
 
@@ -171,6 +154,3 @@ export default App;
 
 
 
-/// you want to map the array of emp and build the table dinamicly 
-
-// map
